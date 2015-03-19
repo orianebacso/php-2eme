@@ -1,0 +1,42 @@
+<!doctype HTML>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+  </head>
+<body>
+    <h1>Inscrit toi !</h1>
+    <form name="form1" action="ajout_utilisateur_post" method="post">
+        <div>
+            <label for="nom">Login :</label>
+            <input type="text" name="login" id="login" />
+        </div>
+        <div>
+            <label for="courriel">Mot de passe :</label>
+            <input type="password" name="password" id="motdepasse" />
+        </div>
+        <div>
+            <label for="majeur" name="majeur">Majeur : </label>
+            <select>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+            </select>
+        </div>
+        <div>
+            <label for="type">type :</label>
+            <input type="radio" name="type" id="Femme" /> Femme
+            <input type="radio" name="type" id="Homme" /> Homme
+        </div>
+        <div>
+            <label for="options">Options :</label>
+            <input type="checkbox" name="options1" id="lettedenouvelle" /> lette de nouvelle
+            <input type="checkbox" name="options2" id="membredesoutient" /> membre de soutient
+        </div>
+        </div>
+        <div class="button">
+            <button type="submit">S'inscrire</button>
+        </div>
+        <div>
+    </form>
+</body>
+</html>
