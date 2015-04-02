@@ -1,12 +1,11 @@
 <?php
-$login = $_POST["login"]
-$password = $_POST["password"]
-$majeur = $_POST["majeur"]
-$type = $_POST["type"]
-$options1 = $_POST["options1"]
-$options2 = $_POST["options2"]
+$login = $_POST["login"];
+$password = $_POST["password"];
+$majeur = $_POST["majeur"];
+$type = isset($_POST["type"]) ? $_POST["type"] : '';
+$options1 = $_POST["options1"];
+$options2 = $_POST["options2"];
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -20,7 +19,7 @@ $options2 = $_POST["options2"]
         Majeur : <?php echo $majeur ?> <br>
         Type : <?php echo $type ?> <br>
         Lettre de nouvelle : <?php echo $option1 ?> <br>
-        Membre de soutient : <?php echo $option2 ?> <br>
+        Membre de soutient : <?php echo $option2 ?> 
     </p>
   </body>
 </html>
