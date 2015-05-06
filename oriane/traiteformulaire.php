@@ -9,6 +9,11 @@
 			$base = $_POST['chiffre'];  // Récupération de la saisie
 			
 			$tobase = "";
+			/************************************************
+			*
+			* Table de multiplication
+			*
+			*************************************************/
 			echo "Voici la table de multiplication " . $base;
 			echo "<table border='2'>";
 			echo "<tr><th>X</th>";
@@ -17,14 +22,19 @@
 			}
 				
 			for( $j=0; $j<$base; $j++ ) {
-				echo "<tr><th>$j</th>";
+				echo "<tr><th>$j</th>"; // Ligne verticale
 				for( $k=0; $k<$base; $k++) {					
-					echo "<td>" . base_convert($j*$k, 10, $base) . "</td>";
+					echo "<td>" . base_convert($j*$k, 10, $base) . "</td>"; //Converion en base
 				}	
 				echo "</tr>";
 			}
 			echo "</table>";
-			echo "<br>";					
+			echo "<br>";
+			/*************************************************
+			*
+			* Table d'addition
+			*
+			**************************************************/
 			echo "Voici la table d'addition " . $base;
 			echo "<table border='2'>";
 			echo "<tr><th>+</th>";
@@ -33,9 +43,9 @@
 			}
 				
 			for( $j=0; $j<$base; $j++ ) {
-				echo "<tr><th>$j</th>";
+				echo "<tr><th>$j</th>"; //Ligne verticale
 				for( $k=0; $k<$base; $k++) {					
-					echo "<td>" . base_convert($j+$k, 10, $base) . "</td>";
+					echo "<td>" . base_convert($j+$k, 10, $base) . "</td>"; //Conversion en base
 				}	
 				echo "</tr>";
 			}
