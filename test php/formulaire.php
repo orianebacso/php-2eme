@@ -8,7 +8,7 @@
        <h1>Structure de contrôle</h1>
 	   <!--formulaire-->
        <form name="formulaire" method="post" action="traiteformulaire.php">
-        <p>CHoisissez un chiffre entre 2 et 16</p>
+        <p>Choisissez un chiffre entre 2 et 16</p>
         <input name="chiffre" type="number" id="nombre" size="2" min="2" max="16"> <!--valeur-->
         <br>
         <br>
