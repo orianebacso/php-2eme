@@ -3,12 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Ex 1 Chap 4</title>
-    <style>
-      * {
-        font-family: Arial;
-        font-size: 12pt;
-      }
-    </style>
   </head>
   <body>
     <?php
